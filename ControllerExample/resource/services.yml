@@ -1,0 +1,5 @@
+services:
+  solicitud.build:
+    public: true
+    class: Aragon\Escolares\Servicios\Solicitudes\SolicitudBuildier
+    arguments: [ "@doctrine.orm.entity_manager", '%fotos_credencial_ruta%' ]
